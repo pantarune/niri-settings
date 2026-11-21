@@ -27,6 +27,22 @@ change has Undo, and an interrupted multi-file write is rolled back.
 
 ## Install
 
+It is a normal Rust + GTK4 application. There is no Nix dependency in the
+code.
+
+| Channel | Status |
+| --- | --- |
+| Arch Linux (AUR) | Recipe ready; not submitted yet |
+| Fedora (COPR) | Recipe ready; not submitted yet |
+| Nix / NixOS | Available now |
+| Other Linux | Build from source |
+
+### Arch and Fedora
+
+The recipes are in [`packaging/`](packaging/README.md). They are not in the
+distro repositories yet. The app builds with Cargo and the GTK4 and libadwaita
+development headers; Nix is only one packaging channel.
+
 ### Nix
 
 Run it:
@@ -51,16 +67,28 @@ environment.systemPackages = [
 
 ### Build from source
 
+Install Rust 1.93 or later, `cargo`, GTK4, libadwaita and `pkg-config`. On Arch:
+
+```sh
+sudo pacman -S --needed rust cargo gtk4 libadwaita pkgconf
+cargo build --release -p niri-settings-app
+./target/release/niri-settings-app
+```
+
+On Fedora:
+
+```sh
+sudo dnf install rust cargo gtk4-devel libadwaita-devel pkgconf-pkg-config
+cargo build --release -p niri-settings-app
+./target/release/niri-settings-app
+```
+
+Or use the Nix dev shell:
+
 ```sh
 nix develop
 cargo run -p niri-settings-app
 ```
-
-### Other distributions
-
-Recipes for nixpkgs, the AUR and Fedora COPR are in
-[`packaging/`](packaging/README.md). Until those packages are accepted, use the
-flake or build from source.
 
 The GUI binary is `niri-settings-app`. The `niri-settings` packages in Fedora
 and openSUSE, and the AUR `niri-settings-git`, are a different Qt application.
