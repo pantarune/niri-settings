@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=niri settings
+Comment=Change niri settings safely
+Exec=niri-settings-app
+Icon=io.github.niri_settings.NiriSettings
+Terminal=false
+Type=Application
+Categories=Settings;DesktopSettings;
+Keywords=niri;wayland;compositor;settings;shortcuts;display;
+StartupNotify=true

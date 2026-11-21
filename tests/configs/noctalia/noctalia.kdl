@@ -1,0 +1,7 @@
+// Managed by Noctalia. Your edits here are overwritten.
+layout {
+    focus-ring {
+        active-color "#c6c6cd"
+        inactive-color "#141314"
+    }
+}

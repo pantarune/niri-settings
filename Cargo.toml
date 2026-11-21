@@ -1,0 +1,24 @@
+[workspace]
+members = ["crates/core", "crates/cli", "crates/app", "crates/dbus", "crates/schema-gen"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/pantarune/niri-settings"
+rust-version = "1.93"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+kdl = { version = "6.7", features = ["v1", "span"] }
+niri-ipc = "26.4"
+tempfile = "3"
+regex = "1"
+notify = "8"
+
+[profile.release]
+lto = "thin"
+strip = "symbols"

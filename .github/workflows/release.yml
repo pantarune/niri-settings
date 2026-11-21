@@ -1,0 +1,62 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cachix/install-nix-action@v30
+
+      - name: Check the tag matches the crate version
+        run: |
+          version=$(sed -n 's/^version = "\(.*\)"/\1/p' Cargo.toml | head -n1)
+          if [ "v$version" != "$GITHUB_REF_NAME" ]; then
+            echo "Tag $GITHUB_REF_NAME does not match Cargo version $version."
+            exit 1
+          fi
+          echo "VERSION=$version" >> "$GITHUB_ENV"
+
+      - name: Test
+        run: nix develop --command cargo test --workspace
+
+      - name: Build the package
+        run: nix build .#niri-settings-app -L
+
+      - name: Make the source archive
+        run: |
+          set -euo pipefail
+          rm -rf dist
+          mkdir -p dist
+          tree="$RUNNER_TEMP/niri-settings-tree"
+          rm -rf "$tree"
+          mkdir -p "$tree"
+          git archive --format=tar \
+            --prefix="niri-settings-app-$VERSION/" \
+            HEAD | tar -x -C "$tree"
+          tar --sort=name \
+            --mtime='UTC 1970-01-01' \
+            --owner=0 --group=0 --numeric-owner \
+            -C "$tree" -cf - "niri-settings-app-$VERSION" |
+            gzip -9n > "dist/niri-settings-app-$VERSION.tar.gz"
+          cd dist
+          sha256sum *.tar.gz > SHA256SUMS
+
+      - name: Create or update the release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            gh release upload "$GITHUB_REF_NAME" dist/* --clobber
+          else
+            gh release create "$GITHUB_REF_NAME" dist/* \
+              --title "niri settings $VERSION" \
+              --generate-notes
+          fi

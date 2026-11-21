@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cachix/install-nix-action@v30
+      - name: Format
+        run: nix develop --command cargo fmt --all -- --check
+      - name: Clippy
+        run: nix develop --command cargo clippy --workspace --all-targets -- -D warnings
+      - name: Test
+        run: nix develop --command cargo test --workspace
+      - name: Schema is current
+        run: nix develop --command scripts/check-schema.sh
+      - name: Prepare headless display
+        run: |
+          mkdir -p "$RUNNER_TEMP/xdg"
+          chmod 700 "$RUNNER_TEMP/xdg"
+          echo "XDG_RUNTIME_DIR=$RUNNER_TEMP/xdg" >> "$GITHUB_ENV"
+      - name: Accessibility audit
+        run: nix develop --command scripts/a11y-check.sh
+      - name: UI smoke screenshots
+        run: |
+          nix develop --command cargo build -p niri-settings-app
+          nix develop --command scripts/screenshot.sh home 1040x760 "$RUNNER_TEMP/home.png"
+          nix develop --command scripts/screenshot.sh home 360x640 "$RUNNER_TEMP/home-narrow.png"
+          nix develop --command scripts/screenshot.sh shortcuts 1040x760 "$RUNNER_TEMP/shortcuts.png"
+      - name: Build package
+        run: nix build .#niri-settings-app
+      - name: Packaging recipes
+        run: nix develop --command scripts/check-packaging.sh

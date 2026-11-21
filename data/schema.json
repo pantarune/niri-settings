@@ -1,0 +1,1291 @@
+[
+  {
+    "path": "animations.config-notification-open-close.off",
+    "type": "bool",
+    "doc": "Turn this animation off.",
+    "source": "ConfigNotificationOpenCloseAnim.off"
+  },
+  {
+    "path": "animations.exit-confirmation-open-close.off",
+    "type": "bool",
+    "doc": "Turn this animation off.",
+    "source": "ExitConfirmationOpenCloseAnim.off"
+  },
+  {
+    "path": "animations.horizontal-view-movement.off",
+    "type": "bool",
+    "doc": "Turn this animation off.",
+    "source": "HorizontalViewMovementAnim.off"
+  },
+  {
+    "path": "animations.off",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "animations.overview-open-close.off",
+    "type": "bool",
+    "doc": "Turn this animation off.",
+    "source": "OverviewOpenCloseAnim.off"
+  },
+  {
+    "path": "animations.recent-windows-close.off",
+    "type": "bool",
+    "doc": "Turn this animation off.",
+    "source": "RecentWindowsCloseAnim.off"
+  },
+  {
+    "path": "animations.screenshot-ui-open.off",
+    "type": "bool",
+    "doc": "Turn this animation off.",
+    "source": "ScreenshotUiOpenAnim.off"
+  },
+  {
+    "path": "animations.slowdown",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "animations.window-close.custom-shader",
+    "type": "text",
+    "doc": "",
+    "source": "String"
+  },
+  {
+    "path": "animations.window-close.off",
+    "type": "bool",
+    "doc": "Turn this animation off.",
+    "source": "Animation.off"
+  },
+  {
+    "path": "animations.window-movement.off",
+    "type": "bool",
+    "doc": "Turn this animation off.",
+    "source": "WindowMovementAnim.off"
+  },
+  {
+    "path": "animations.window-open.custom-shader",
+    "type": "text",
+    "doc": "",
+    "source": "String"
+  },
+  {
+    "path": "animations.window-open.off",
+    "type": "bool",
+    "doc": "Turn this animation off.",
+    "source": "Animation.off"
+  },
+  {
+    "path": "animations.window-resize.custom-shader",
+    "type": "text",
+    "doc": "",
+    "source": "String"
+  },
+  {
+    "path": "animations.window-resize.off",
+    "type": "bool",
+    "doc": "Turn this animation off.",
+    "source": "Animation.off"
+  },
+  {
+    "path": "animations.workspace-switch.off",
+    "type": "bool",
+    "doc": "Turn this animation off.",
+    "source": "WorkspaceSwitchAnim.off"
+  },
+  {
+    "path": "blur.noise",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "blur.off",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "blur.offset",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "blur.passes",
+    "type": "number",
+    "integer": true,
+    "doc": "",
+    "source": "u8"
+  },
+  {
+    "path": "blur.saturation",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "clipboard.disable-primary",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "config-notification.disable-failed",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "cursor.hide-after-inactive-ms",
+    "type": "number",
+    "integer": true,
+    "doc": "",
+    "source": "u32"
+  },
+  {
+    "path": "cursor.hide-when-typing",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "cursor.xcursor-size",
+    "type": "number",
+    "integer": true,
+    "doc": "",
+    "source": "u8"
+  },
+  {
+    "path": "cursor.xcursor-theme",
+    "type": "text",
+    "doc": "",
+    "source": "String"
+  },
+  {
+    "path": "debug.dbus-interfaces-in-non-session-instances",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "debug.deactivate-unfocused-windows",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "debug.disable-cursor-plane",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "debug.disable-direct-scanout",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "debug.disable-monitor-names",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "debug.disable-resize-throttling",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "debug.disable-transactions",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "debug.emulate-zero-presentation-time",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "debug.enable-overlay-planes",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "debug.force-disable-connectors-on-resume",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "debug.force-pipewire-invalid-modifier",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "debug.honor-xdg-activation-with-invalid-serial",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "debug.keep-laptop-panel-on-when-lid-is-closed",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "debug.keep-max-bpc-unchanged",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "debug.preview-render",
+    "type": "choice",
+    "options": [
+      "screencast",
+      "screen-capture"
+    ],
+    "doc": "",
+    "source": "PreviewRender"
+  },
+  {
+    "path": "debug.render-drm-device",
+    "type": "text",
+    "doc": "",
+    "source": "PathBuf"
+  },
+  {
+    "path": "debug.restrict-primary-scanout-to-matching-format",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "debug.skip-cursor-only-updates-during-vrr",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "debug.strict-new-window-focus-policy",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "debug.wait-for-frame-completion-before-queueing",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "gestures.dnd-edge-view-scroll.delay-ms",
+    "type": "number",
+    "integer": true,
+    "doc": "",
+    "source": "u16"
+  },
+  {
+    "path": "gestures.dnd-edge-view-scroll.max-speed",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "gestures.dnd-edge-view-scroll.trigger-width",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "gestures.dnd-edge-workspace-switch.delay-ms",
+    "type": "number",
+    "integer": true,
+    "doc": "",
+    "source": "u16"
+  },
+  {
+    "path": "gestures.dnd-edge-workspace-switch.max-speed",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "gestures.dnd-edge-workspace-switch.trigger-height",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "gestures.hot-corners.bottom-left",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "gestures.hot-corners.bottom-right",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "gestures.hot-corners.off",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "gestures.hot-corners.top-left",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "gestures.hot-corners.top-right",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "hotkey-overlay.hide-not-bound",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "hotkey-overlay.skip-at-startup",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.disable-power-key-handling",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.keyboard.numlock",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.keyboard.repeat-delay",
+    "type": "number",
+    "integer": true,
+    "doc": "",
+    "source": "u16"
+  },
+  {
+    "path": "input.keyboard.repeat-rate",
+    "type": "number",
+    "integer": true,
+    "doc": "",
+    "source": "u8"
+  },
+  {
+    "path": "input.keyboard.track-layout",
+    "type": "choice",
+    "options": [
+      "global",
+      "window"
+    ],
+    "doc": "",
+    "source": "TrackLayout"
+  },
+  {
+    "path": "input.keyboard.xkb.file",
+    "type": "text",
+    "doc": "",
+    "source": "String"
+  },
+  {
+    "path": "input.keyboard.xkb.layout",
+    "type": "text",
+    "doc": "",
+    "source": "String"
+  },
+  {
+    "path": "input.keyboard.xkb.model",
+    "type": "text",
+    "doc": "",
+    "source": "String"
+  },
+  {
+    "path": "input.keyboard.xkb.options",
+    "type": "text",
+    "doc": "",
+    "source": "String"
+  },
+  {
+    "path": "input.keyboard.xkb.rules",
+    "type": "text",
+    "doc": "",
+    "source": "String"
+  },
+  {
+    "path": "input.keyboard.xkb.variant",
+    "type": "text",
+    "doc": "",
+    "source": "String"
+  },
+  {
+    "path": "input.mod-key",
+    "type": "choice",
+    "options": [
+      "ctrl",
+      "shift",
+      "alt",
+      "super",
+      "iso-level3-shift",
+      "iso-level5-shift"
+    ],
+    "doc": "",
+    "source": "ModKey"
+  },
+  {
+    "path": "input.mod-key-nested",
+    "type": "choice",
+    "options": [
+      "ctrl",
+      "shift",
+      "alt",
+      "super",
+      "iso-level3-shift",
+      "iso-level5-shift"
+    ],
+    "doc": "",
+    "source": "ModKey"
+  },
+  {
+    "path": "input.mouse.accel-profile",
+    "type": "choice",
+    "options": [
+      "adaptive",
+      "flat"
+    ],
+    "doc": "",
+    "source": "AccelProfile"
+  },
+  {
+    "path": "input.mouse.accel-speed",
+    "type": "text",
+    "doc": "",
+    "source": "FloatOrInt<>"
+  },
+  {
+    "path": "input.mouse.left-handed",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.mouse.middle-emulation",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.mouse.natural-scroll",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.mouse.off",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.mouse.scroll-button",
+    "type": "number",
+    "integer": true,
+    "doc": "",
+    "source": "u32"
+  },
+  {
+    "path": "input.mouse.scroll-button-lock",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.mouse.scroll-factor.base",
+    "type": "text",
+    "doc": "",
+    "source": "FloatOrInt<>"
+  },
+  {
+    "path": "input.mouse.scroll-factor.horizontal",
+    "type": "text",
+    "doc": "",
+    "source": "FloatOrInt<>"
+  },
+  {
+    "path": "input.mouse.scroll-factor.vertical",
+    "type": "text",
+    "doc": "",
+    "source": "FloatOrInt<>"
+  },
+  {
+    "path": "input.mouse.scroll-method",
+    "type": "choice",
+    "options": [
+      "no-scroll",
+      "two-finger",
+      "edge",
+      "on-button-down"
+    ],
+    "doc": "",
+    "source": "ScrollMethod"
+  },
+  {
+    "path": "input.tablet.left-handed",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.tablet.map-to-focused-output",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.tablet.map-to-output",
+    "type": "text",
+    "doc": "",
+    "source": "String"
+  },
+  {
+    "path": "input.tablet.off",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.touch.map-to-output",
+    "type": "text",
+    "doc": "",
+    "source": "String"
+  },
+  {
+    "path": "input.touch.off",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.touchpad.accel-profile",
+    "type": "choice",
+    "options": [
+      "adaptive",
+      "flat"
+    ],
+    "doc": "",
+    "source": "AccelProfile"
+  },
+  {
+    "path": "input.touchpad.accel-speed",
+    "type": "text",
+    "doc": "",
+    "source": "FloatOrInt<>"
+  },
+  {
+    "path": "input.touchpad.click-method",
+    "type": "choice",
+    "options": [
+      "clickfinger",
+      "button-areas"
+    ],
+    "doc": "",
+    "source": "ClickMethod"
+  },
+  {
+    "path": "input.touchpad.disabled-on-external-mouse",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.touchpad.drag",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.touchpad.drag-lock",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.touchpad.dwt",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.touchpad.dwtp",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.touchpad.left-handed",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.touchpad.middle-emulation",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.touchpad.natural-scroll",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.touchpad.off",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.touchpad.scroll-button",
+    "type": "number",
+    "integer": true,
+    "doc": "",
+    "source": "u32"
+  },
+  {
+    "path": "input.touchpad.scroll-button-lock",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.touchpad.scroll-factor.base",
+    "type": "text",
+    "doc": "",
+    "source": "FloatOrInt<>"
+  },
+  {
+    "path": "input.touchpad.scroll-factor.horizontal",
+    "type": "text",
+    "doc": "",
+    "source": "FloatOrInt<>"
+  },
+  {
+    "path": "input.touchpad.scroll-factor.vertical",
+    "type": "text",
+    "doc": "",
+    "source": "FloatOrInt<>"
+  },
+  {
+    "path": "input.touchpad.scroll-method",
+    "type": "choice",
+    "options": [
+      "no-scroll",
+      "two-finger",
+      "edge",
+      "on-button-down"
+    ],
+    "doc": "",
+    "source": "ScrollMethod"
+  },
+  {
+    "path": "input.touchpad.tap",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.touchpad.tap-button-map",
+    "type": "choice",
+    "options": [
+      "left-right-middle",
+      "left-middle-right"
+    ],
+    "doc": "",
+    "source": "TapButtonMap"
+  },
+  {
+    "path": "input.trackball.accel-profile",
+    "type": "choice",
+    "options": [
+      "adaptive",
+      "flat"
+    ],
+    "doc": "",
+    "source": "AccelProfile"
+  },
+  {
+    "path": "input.trackball.accel-speed",
+    "type": "text",
+    "doc": "",
+    "source": "FloatOrInt<>"
+  },
+  {
+    "path": "input.trackball.left-handed",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.trackball.middle-emulation",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.trackball.natural-scroll",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.trackball.off",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.trackball.scroll-button",
+    "type": "number",
+    "integer": true,
+    "doc": "",
+    "source": "u32"
+  },
+  {
+    "path": "input.trackball.scroll-button-lock",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.trackball.scroll-method",
+    "type": "choice",
+    "options": [
+      "no-scroll",
+      "two-finger",
+      "edge",
+      "on-button-down"
+    ],
+    "doc": "",
+    "source": "ScrollMethod"
+  },
+  {
+    "path": "input.trackpoint.accel-profile",
+    "type": "choice",
+    "options": [
+      "adaptive",
+      "flat"
+    ],
+    "doc": "",
+    "source": "AccelProfile"
+  },
+  {
+    "path": "input.trackpoint.accel-speed",
+    "type": "text",
+    "doc": "",
+    "source": "FloatOrInt<>"
+  },
+  {
+    "path": "input.trackpoint.left-handed",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.trackpoint.middle-emulation",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.trackpoint.natural-scroll",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.trackpoint.off",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.trackpoint.scroll-button",
+    "type": "number",
+    "integer": true,
+    "doc": "",
+    "source": "u32"
+  },
+  {
+    "path": "input.trackpoint.scroll-button-lock",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "input.trackpoint.scroll-method",
+    "type": "choice",
+    "options": [
+      "no-scroll",
+      "two-finger",
+      "edge",
+      "on-button-down"
+    ],
+    "doc": "",
+    "source": "ScrollMethod"
+  },
+  {
+    "path": "input.warp-mouse-to-focus.mode",
+    "type": "choice",
+    "options": [
+      "center-xy",
+      "center-xy-always"
+    ],
+    "doc": "",
+    "source": "WarpMouseToFocusMode"
+  },
+  {
+    "path": "input.workspace-auto-back-and-forth",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "layout.always-center-single-column",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "layout.background-color",
+    "type": "color",
+    "doc": "",
+    "source": "Color"
+  },
+  {
+    "path": "layout.border.active-color",
+    "type": "color",
+    "doc": "",
+    "source": "Color"
+  },
+  {
+    "path": "layout.border.inactive-color",
+    "type": "color",
+    "doc": "",
+    "source": "Color"
+  },
+  {
+    "path": "layout.border.off",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "layout.border.urgent-color",
+    "type": "color",
+    "doc": "",
+    "source": "Color"
+  },
+  {
+    "path": "layout.border.width",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "layout.center-focused-column",
+    "type": "choice",
+    "options": [
+      "never",
+      "always",
+      "on-overflow"
+    ],
+    "doc": "",
+    "source": "CenterFocusedColumn"
+  },
+  {
+    "path": "layout.default-column-display",
+    "type": "text",
+    "doc": "",
+    "source": "ColumnDisplay"
+  },
+  {
+    "path": "layout.empty-workspace-above-first",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "layout.focus-ring.active-color",
+    "type": "color",
+    "doc": "",
+    "source": "Color"
+  },
+  {
+    "path": "layout.focus-ring.inactive-color",
+    "type": "color",
+    "doc": "",
+    "source": "Color"
+  },
+  {
+    "path": "layout.focus-ring.off",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "layout.focus-ring.urgent-color",
+    "type": "color",
+    "doc": "",
+    "source": "Color"
+  },
+  {
+    "path": "layout.focus-ring.width",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "layout.gaps",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "layout.insert-hint.color",
+    "type": "color",
+    "doc": "",
+    "source": "Color"
+  },
+  {
+    "path": "layout.insert-hint.off",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "layout.shadow.color",
+    "type": "color",
+    "doc": "",
+    "source": "Color"
+  },
+  {
+    "path": "layout.shadow.draw-behind-window",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "layout.shadow.inactive-color",
+    "type": "color",
+    "doc": "",
+    "source": "Color"
+  },
+  {
+    "path": "layout.shadow.offset.x",
+    "type": "text",
+    "doc": "",
+    "source": "FloatOrInt<>"
+  },
+  {
+    "path": "layout.shadow.offset.y",
+    "type": "text",
+    "doc": "",
+    "source": "FloatOrInt<>"
+  },
+  {
+    "path": "layout.shadow.on",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "layout.shadow.softness",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "layout.shadow.spread",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "layout.struts.bottom",
+    "type": "text",
+    "doc": "",
+    "source": "FloatOrInt<>"
+  },
+  {
+    "path": "layout.struts.left",
+    "type": "text",
+    "doc": "",
+    "source": "FloatOrInt<>"
+  },
+  {
+    "path": "layout.struts.right",
+    "type": "text",
+    "doc": "",
+    "source": "FloatOrInt<>"
+  },
+  {
+    "path": "layout.struts.top",
+    "type": "text",
+    "doc": "",
+    "source": "FloatOrInt<>"
+  },
+  {
+    "path": "layout.tab-indicator.active-color",
+    "type": "color",
+    "doc": "",
+    "source": "Color"
+  },
+  {
+    "path": "layout.tab-indicator.corner-radius",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "layout.tab-indicator.gap",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "layout.tab-indicator.gaps-between-tabs",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "layout.tab-indicator.hide-when-single-tab",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "layout.tab-indicator.inactive-color",
+    "type": "color",
+    "doc": "",
+    "source": "Color"
+  },
+  {
+    "path": "layout.tab-indicator.length.total-proportion",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "layout.tab-indicator.off",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "layout.tab-indicator.place-within-column",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "layout.tab-indicator.position",
+    "type": "choice",
+    "options": [
+      "left",
+      "right",
+      "top",
+      "bottom"
+    ],
+    "doc": "",
+    "source": "TabIndicatorPosition"
+  },
+  {
+    "path": "layout.tab-indicator.urgent-color",
+    "type": "color",
+    "doc": "",
+    "source": "Color"
+  },
+  {
+    "path": "layout.tab-indicator.width",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "overview.backdrop-color",
+    "type": "color",
+    "doc": "",
+    "source": "Color"
+  },
+  {
+    "path": "overview.workspace-shadow.color",
+    "type": "color",
+    "doc": "",
+    "source": "Color"
+  },
+  {
+    "path": "overview.workspace-shadow.off",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "overview.workspace-shadow.offset.x",
+    "type": "text",
+    "doc": "",
+    "source": "FloatOrInt<>"
+  },
+  {
+    "path": "overview.workspace-shadow.offset.y",
+    "type": "text",
+    "doc": "",
+    "source": "FloatOrInt<>"
+  },
+  {
+    "path": "overview.workspace-shadow.softness",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "overview.workspace-shadow.spread",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "overview.zoom",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "prefer-no-csd",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "recent-windows.debounce-ms",
+    "type": "number",
+    "integer": true,
+    "doc": "",
+    "source": "u16"
+  },
+  {
+    "path": "recent-windows.highlight.active-color",
+    "type": "color",
+    "doc": "",
+    "source": "Color"
+  },
+  {
+    "path": "recent-windows.highlight.corner-radius",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "recent-windows.highlight.padding",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "recent-windows.highlight.urgent-color",
+    "type": "color",
+    "doc": "",
+    "source": "Color"
+  },
+  {
+    "path": "recent-windows.on",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "recent-windows.open-delay-ms",
+    "type": "number",
+    "integer": true,
+    "doc": "",
+    "source": "u16"
+  },
+  {
+    "path": "recent-windows.previews.max-height",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "recent-windows.previews.max-scale",
+    "type": "number",
+    "integer": false,
+    "doc": "",
+    "source": "f64"
+  },
+  {
+    "path": "screenshot-path",
+    "type": "text",
+    "doc": "",
+    "source": "ScreenshotPath"
+  },
+  {
+    "path": "xwayland-satellite.off",
+    "type": "bool",
+    "doc": "",
+    "source": "bool"
+  },
+  {
+    "path": "xwayland-satellite.path",
+    "type": "text",
+    "doc": "",
+    "source": "String"
+  }
+]

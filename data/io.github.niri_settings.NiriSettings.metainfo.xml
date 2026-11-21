@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.niri_settings.NiriSettings</id>
+  <name>niri settings</name>
+  <summary>Change niri settings safely</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <description>
+    <p>
+      Change the niri config with a graphical interface.
+      Every change is checked with niri validate and can be undone.
+      Comments and formatting in the file stay intact.
+    </p>
+    <p>
+      The app finds problems, imports shortcuts from Hyprland or Sway,
+      and shows a live picture for visual options.
+    </p>
+  </description>
+  <launchable type="desktop-id">io.github.niri_settings.NiriSettings.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Change appearance with a live preview</caption>
+      <image>https://raw.githubusercontent.com/pantarune/niri-settings/v0.1.0/docs/screenshots/appearance.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Edit shortcuts and apply a familiar scheme</caption>
+      <image>https://raw.githubusercontent.com/pantarune/niri-settings/v0.1.0/docs/screenshots/shortcuts.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Set up shortcuts, look and keyboard in six steps</caption>
+      <image>https://raw.githubusercontent.com/pantarune/niri-settings/v0.1.0/docs/screenshots/welcome.png</image>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://github.com/pantarune/niri-settings</url>
+  <developer id="io.github.niri_settings">
+    <name>The niri settings authors</name>
+  </developer>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="0.1.0" date="2026-11-21"/>
+  </releases>
+  <categories>
+    <category>Settings</category>
+  </categories>
+</component>

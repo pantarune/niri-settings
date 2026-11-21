@@ -1,0 +1,33 @@
+// My dotfiles. Keep this comment.
+layout {
+    gaps 16       // roomy
+    border {
+        off
+        width 2
+    }
+    center-focused-column "on-overflow"
+}
+
+input {
+    keyboard {
+        xkb {
+            layout "us,tr"
+        }
+        repeat-delay 220
+        repeat-rate 45
+        numlock
+    }
+    focus-follows-mouse max-scroll-amount="0%"
+}
+
+binds {
+    Mod+Return hotkey-overlay-title="Terminal" { spawn "foot"; }
+    Mod+Q repeat=false { close-window; }
+}
+
+// Values set after the include win.
+include "colors.kdl"
+
+overview {
+    zoom 0.45
+}

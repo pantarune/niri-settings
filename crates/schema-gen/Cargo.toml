@@ -1,0 +1,20 @@
+[package]
+name = "niri-settings-schema-gen"
+description = "Generate the niri option schema from niri-config source"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "niri-settings-schema-gen"
+path = "src/main.rs"
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+syn = { version = "2", features = ["full"] }
+
+[dev-dependencies]
+tempfile.workspace = true

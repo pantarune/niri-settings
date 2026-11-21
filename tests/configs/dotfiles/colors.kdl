@@ -1,0 +1,6 @@
+// Colour overrides from a theme.
+layout {
+    focus-ring {
+        active-color "#7fc8ff"
+    }
+}

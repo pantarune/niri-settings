@@ -1,0 +1,17 @@
+[package]
+name = "niri-settings-cli"
+description = "Command line interface for niri-settings"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "niri-settings-cli"
+path = "src/main.rs"
+
+[dependencies]
+niri-settings-core = { path = "../core" }
+clap = { version = "4", features = ["derive"] }
+serde_json.workspace = true

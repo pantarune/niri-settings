@@ -1,0 +1,22 @@
+[package]
+name = "niri-settings-core"
+description = "Config model, safe writes, history, lints and imports for niri-settings"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+kdl.workspace = true
+niri-ipc.workspace = true
+tempfile.workspace = true
+regex.workspace = true
+notify.workspace = true
+miette = { version = "7.6", default-features = false }
+
+[dev-dependencies]
+proptest = "1"

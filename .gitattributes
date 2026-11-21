@@ -1,0 +1,3 @@
+# Keep the distro recipes out of source archives. The AUR recipe contains the
+# archive hash, so including it would make the hash self-referential.
+/packaging export-ignore

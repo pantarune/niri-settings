@@ -1,0 +1,20 @@
+[package]
+name = "niri-settings-dbus"
+description = "D-Bus service for niri-settings"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "niri-settings-daemon"
+path = "src/main.rs"
+
+[dependencies]
+niri-settings-core = { path = "../core" }
+zbus = "5.13"
+serde_json.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
