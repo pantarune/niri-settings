@@ -32,16 +32,24 @@ code.
 
 | Channel | Status |
 | --- | --- |
-| Arch Linux (AUR) | Recipe ready; not submitted yet |
+| [Arch Linux (AUR)](https://aur.archlinux.org/packages/niri-settings-app) | Available now |
 | Fedora (COPR) | Recipe ready; not submitted yet |
 | Nix / NixOS | Available now |
 | Other Linux | Build from source |
 
 ### Arch and Fedora
 
-The recipes are in [`packaging/`](packaging/README.md). They are not in the
-distro repositories yet. The app builds with Cargo and the GTK4 and libadwaita
-development headers; Nix is only one packaging channel.
+On Arch, install from the AUR:
+
+```sh
+paru -S niri-settings-app
+# or
+yay -S niri-settings-app
+```
+
+The Fedora COPR recipe is in [`packaging/`](packaging/README.md) and is not
+submitted yet. The app builds with Cargo and the GTK4 and libadwaita development
+headers; Nix is only one packaging channel.
 
 ### Nix
 
